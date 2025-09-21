@@ -5,14 +5,12 @@ from datetime import datetime
 import pandas.errors
 import requests  # ✅ for geolocation
 
-# Ports (safe high-numbered for non-admin use)
+# ports
 PORTS = [2221, 2222, 2223, 8080, 8443, 3307]
 LOG_FILE = "honeypot_log.csv"
 
-# Thread lock for safe file access
 log_lock = threading.Lock()
 
-# Ensure log file exists and has headers
 try:
     pd.read_csv(LOG_FILE)
 except (FileNotFoundError, pandas.errors.EmptyDataError):
