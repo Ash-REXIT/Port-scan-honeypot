@@ -1,4 +1,4 @@
-# 🕵️‍♂️ Python Honeypot
+# Python Honeypot
 
 A simple honeypot that listens on multiple ports, logs connection attempts, and enriches them with IP geolocation. Built for learning cybersecurity and networking fundamentals.
 
